@@ -1,0 +1,20 @@
+// SCSS in the project
+
+// global font - Noto Sans TC
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC");
+$font-stack: "Noto Sans TC", sans-serif;
+*{
+   font-family: $font-stack !important;
+}
+
+@import "colors";
+
+// background color
+.app-bg-light{
+   background-color: #f4f6fa!important;
+}
+
+// nowrap
+.nowrap{
+   white-space: nowrap !important;
+}
