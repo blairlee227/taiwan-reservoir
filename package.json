@@ -1,0 +1,29 @@
+{
+  "name": "cardif-trailer-fee-ui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "format": "prettier --write **/*.{js,vue} "
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.9.1",
+    "dayjs": "^1.10.5",
+    "nuxt": "^2.15.3",
+    "qs": "^6.10.1"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "prettier": "2.3.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1"
+  },
+  "prettier":{
+    "trailingComma": "none"
+  }
+}
