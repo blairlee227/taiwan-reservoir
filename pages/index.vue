@@ -25,7 +25,7 @@ export default {
       });
       console.log(this.rowData);
     } catch (e) {
-      console.log(e);
+      alert(e);
     }
   }
 };
