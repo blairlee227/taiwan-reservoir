@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto pt-10 xl:px-10 px-5">
     <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mt-10">
-      <div class="mb-10" v-for="item in rowData">
+      <div class="mb-10" v-for="item in rowData" :key="item.name">
         <reservoirInfo :rowData="item" />
       </div>
     </div>
