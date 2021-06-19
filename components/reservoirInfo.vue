@@ -40,7 +40,7 @@
           </p>
         </div>
         <div>
-          <p class="mt-2 text-brown">更新時間：{{ rowData.updateAt }})</p>
+          <p class="mt-2 text-brown">更新時間：{{ rowData.updateAt }}</p>
         </div>
       </div>
     </div>
