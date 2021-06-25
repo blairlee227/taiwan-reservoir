@@ -49,5 +49,10 @@ export default {
   // Defines environment variables that should be available on the client side
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:8080'
+  },
+
+  target: 'static',
+  router: {
+    base: '/<repository-name>/'
   }
 }
