@@ -53,6 +53,6 @@ export default {
 
   target: 'static',
   router: {
-    base: '/<repository-name>/'
+    base: '/taiwan-reservoir/'
   }
 }
