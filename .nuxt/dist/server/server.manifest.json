@@ -1,0 +1,15 @@
+{
+  "entry": "server.js",
+  "files": {
+    "components/chart.js": "components/chart.js",
+    "components/reservoir-info.js": "components/reservoir-info.js",
+    "pages/index.js": "pages/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "components/chart.js": "components/chart.js.map",
+    "components/reservoir-info.js": "components/reservoir-info.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

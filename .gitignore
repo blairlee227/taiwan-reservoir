@@ -3,11 +3,9 @@
 .DS_Store
 src/.temp
 node_modules/
-dist
 .env
 .env.*
 !.env.example
-dist/
 yarn.lock
 package-lock.json
 static/manifest.json
