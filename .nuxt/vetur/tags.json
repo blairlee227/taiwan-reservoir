@@ -1,1 +1,11 @@
-{}
+{
+  "Chart": {
+    "description": "Auto imported from components/chart.vue"
+  },
+  "Navigator": {
+    "description": "Auto imported from components/navigator.vue"
+  },
+  "ReservoirInfo": {
+    "description": "Auto imported from components/reservoirInfo.vue"
+  }
+}
