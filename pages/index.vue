@@ -46,6 +46,7 @@ export default {
       ]
     };
   },
+  fetchOnServer: false,
   async fetch() {
     try {
       let res = await reservoirApi.getReservoirData();
