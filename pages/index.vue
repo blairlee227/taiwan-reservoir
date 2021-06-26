@@ -54,11 +54,10 @@ export default {
       this.rowData = this.rowData.map((item) => {
         item.mainArea = this.findMainArea(item.name);
         item.area = this.findArea(item.name);
-        item.index = this.findIndex(item.area);
         return item;
       });
       this.rowData.sort(function (a, b) {
-        return a.index - b.index;
+        return a.sort - b.sort;
       });
     } catch (e) {
       alert(e);
@@ -72,57 +71,6 @@ export default {
     findMainArea(name) {
       let area = this.areaData.find((item) => name === item.name);
       return area.mainArea;
-    },
-    findIndex(area) {
-      let index = -1;
-      for (let i = 0; i < area.length; i++) {
-        switch (area[i]) {
-          case "基隆":
-            index = 0;
-            break;
-          case "台北":
-            index = 1;
-            break;
-          case "新北":
-            index = 2;
-            break;
-          case "桃園":
-            index = 3;
-            break;
-          case "新竹":
-            index = 4;
-            break;
-          case "苗栗":
-            index = 5;
-            break;
-          case "台中":
-            index = 6;
-            break;
-          case "南投":
-            index = 7;
-            break;
-          case "雲林":
-            index = 8;
-            break;
-          case "彰化":
-            index = 9;
-            break;
-          case "嘉義":
-            index = 10;
-            break;
-          case "台南":
-            index = 11;
-            break;
-          case "高雄":
-            index = 12;
-            break;
-          case "屏東":
-            index = 13;
-            break;
-        }
-        break;
-      }
-      return index;
     }
   }
 };
