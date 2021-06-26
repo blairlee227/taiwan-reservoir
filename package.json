@@ -16,6 +16,7 @@
     "core-js": "^3.9.1",
     "dayjs": "^1.10.5",
     "nuxt": "^2.15.3",
+    "push-dir": "^0.4.1",
     "qs": "^6.10.1"
   },
   "devDependencies": {
