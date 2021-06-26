@@ -60,7 +60,7 @@ export default {
   },
   computed: {
     value() {
-      let val = this.percentage.toFixed(1);
+      let val = this.percentage.toFixed(0);
       return val;
     },
     waterValue() {
