@@ -52,10 +52,12 @@ export default {
       let res = await reservoirApi.getReservoirData();
       this.rowData = Object.values(res[0]);
       this.rowData = this.rowData.map((item) => {
-        item.mainArea = this.findMainArea(item.name);
-        item.area = this.findArea(item.name);
+        item.mainArea = this.findData(item.name, "mainArea");
+        item.area = this.findData(item.name, "area");
+        item.sort = this.findData(item.name, "sort");
         return item;
       });
+      console.log(this.rowData);
       this.rowData.sort(function (a, b) {
         return a.sort - b.sort;
       });
@@ -64,13 +66,9 @@ export default {
     }
   },
   methods: {
-    findArea(name) {
+    findData(name, key) {
       let area = this.areaData.find((item) => name === item.name);
-      return area.area;
-    },
-    findMainArea(name) {
-      let area = this.areaData.find((item) => name === item.name);
-      return area.mainArea;
+      return area[key];
     }
   }
 };
