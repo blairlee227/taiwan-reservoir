@@ -45,7 +45,7 @@
       </g>
     </svg>
     <p class="value-text">
-      <span class="value">{{ value }}</span>
+      <span class="value">{{ removeDecimalZero(value) }}</span>
       <span class="percentage">%</span>
     </p>
   </div>
@@ -60,13 +60,24 @@ export default {
   },
   computed: {
     value() {
-      let val = this.percentage.toFixed(0);
+      let val = this.percentage.toFixed(1);
       return val;
     },
     waterValue() {
       // 0~137
       let waterVal = 137 - (this.value * 137) / 100;
       return waterVal;
+    }
+  },
+  methods: {
+    removeDecimalZero(val) {
+      let stringVal = val.toString();
+      if (stringVal.slice(-1) === "0") {
+        // remove the decimal point if the decimal point is 0.
+        return stringVal.slice(0, -2);
+      } else {
+        return val;
+      }
     }
   }
 };
