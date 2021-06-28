@@ -71,10 +71,9 @@ export default {
         item.sort = this.findData(item.name, "sort");
         return item;
       });
-      this.rowData.sort(function (a, b) {
+      this.dataForView = this.rowData.sort((a, b) => {
         return a.sort - b.sort;
       });
-      this.dataForView = this.rowData;
     } catch (e) {
       alert(e);
     }

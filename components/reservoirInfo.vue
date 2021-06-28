@@ -2,6 +2,7 @@
   <div>
     <div class="flex justify-center">
       <div class="flex-initial xl:mr-10 lg:mr-5 md:mr-12 mr-5">
+        <!-- water percentage chart -->
         <chart class="chart" :percentage="rowData.percentage" />
       </div>
       <div
