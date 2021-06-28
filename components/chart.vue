@@ -11,7 +11,7 @@
       viewBox="0 0 97.1 139.4"
       style="enable-background: new 0 0 97.1 139.4"
       xml:space="preserve"
-      :class="value < 33.3 ? 'danger' : value < 66.6 ? 'warning' : 'default'"
+      :class="value < 30 ? 'danger' : value < 50 ? 'warning' : 'default'"
     >
       <path
         class="bg"
