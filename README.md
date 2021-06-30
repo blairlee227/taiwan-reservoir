@@ -1,20 +1,10 @@
-# taiwan-reservoir
+# 台灣水庫即時水情
+<img width="100%" alt="截圖 2021-06-29 下午8 16 13" src="https://user-images.githubusercontent.com/31032281/123950212-04b2fd80-d9d6-11eb-8752-48a31155a608.png">
 
-## Build Setup
+## Live demo
 
-```bash
-# install dependencies
-$ yarn install
+https://blairlee227.github.io/taiwan-reservoir/
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Reference
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+[用數據看台灣](https://www.taiwanstat.com/realtime/)
