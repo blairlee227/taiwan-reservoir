@@ -31,15 +31,21 @@
           <use xlink:href="#clip-path-use" style="overflow: visible" />
         </clipPath>
         <g>
-          <rect y="0" class="water" width="97.1" height="275">
+          <rect
+            y="0"
+            ref="waterRect"
+            class="water"
+            width="97.1"
+            :height="waterValue"
+          >
             <!-- 0~137 -->
-            <animate
+            <!-- <animate
               attributeName="height"
               from="137"
               :to="waterValue"
               dur="0.6s"
               fill="freeze"
-            />
+            /> -->
           </rect>
         </g>
       </g>
