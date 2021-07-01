@@ -14,7 +14,10 @@
         px-5
       "
     >
-      <img class="w-96 mx-auto" src="../assets/images/logo.svg" />
+      <img class="w-10 mx-auto mb-4" src="../assets/images/water_icon.svg" />
+      <h1 class="text-center text-4xl sm:text-3xl text-brown fw-bold">
+        台灣水庫即時水情
+      </h1>
     </div>
   </div>
 </template>
