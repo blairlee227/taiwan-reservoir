@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto pt-10 xl:px-10 px-5">
+  <div>
     <div class="text-center mb-12">
       <span
         class="
@@ -22,9 +22,13 @@
         {{ areaBtn.text }}
       </span>
     </div>
-    <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mt-12">
-      <div class="mb-10" v-for="item in dataForView" :key="item.name">
-        <reservoirInfo :rowData="item" />
+    <div class="bg-beige rounded-3xl">
+      <div class="container mx-auto pt-3 xl:px-10 px-5">
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-4 mt-12">
+          <div class="mb-10" v-for="item in dataForView" :key="item.name">
+            <reservoirInfo :rowData="item" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
